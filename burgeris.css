@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.burger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 16px;
+    min-width: 120px; /* Adjust this value as needed */
+    justify-content: flex-end;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+.bun, .lettuce, .tomato, .cheese, .patty, .onion {
+    margin: 0 auto;
+}
+
+.bun {
+    width: 200px;
+    height: 60px;
+    background-color: #f5d19a;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+}
+
+.bun.bottom {
+    border-radius: 0 0 50% 50%;
+}
+
+.sesame-seeds {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 0;
+}
+
+.seed {
+    width: 4px;
+    height: 8px;
+    background-color: #e0a860;
+    border-radius: 50%;
+}
+
+.lettuce {
+    width: 180px;
+    height: 20px;
+    background-color: #91c63d;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.tomato {
+    width: 160px;
+    height: 20px;
+    background-color: #e74c3c;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.cheese {
+    width: 160px;
+    height: 20px;
+    background-color: #fdd835;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.patty {
+    width: 180px;
+    height: 40px;
+    background-color: #5d4037;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.onion {
+    width: 160px;
+    height: 15px;
+    background-color: #dcdcdc;
+    border-radius: 15px;
+    z-index: 1;
+}
